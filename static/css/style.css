@@ -1,0 +1,124 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1, h2, h3, h5 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+section {
+  padding: 4rem 0;
+}
+.hero {
+  background: url('/static/images/fuji.jpg') center/cover no-repeat;
+  padding: 100px 0;
+  color: white;
+  position: relative;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0,0,0,0.6); /* overlay for readability */
+  z-index: 1;
+}
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+
+.hero img {
+  max-width: 200px;
+  border: 5px solid white;
+}
+
+.hero .btn {
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  font-weight: 500;
+  margin-left: 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #b7f8db !important;
+}
+
+.card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.btn-glass {
+  background: linear-gradient(135deg, rgba(40, 40, 40, 0.6), rgba(80, 80, 80, 0.4));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #f1f1f1;
+  border-radius: 30px;
+  padding: 0.6rem 1.4rem;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.btn-glass:hover {
+  background: linear-gradient(135deg, rgba(60, 60, 60, 0.8), rgba(100, 100, 100, 0.6));
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  color: white;
+}
+
+#contact {
+  background-color: #f0f0f0;
+  padding: 4rem 0;
+}
+
+#contact p {
+  font-size: 1.1rem;
+}
+
+#contact .btn {
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 4rem 1rem;
+  }
+
+  .hero img {
+    margin-bottom: 1rem;
+  }
+
+  .navbar-nav .nav-link {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+  }
+}
