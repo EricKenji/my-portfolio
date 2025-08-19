@@ -67,5 +67,11 @@ projects = [
         "description": "A space invaders game written in Python.",
         "image": "space_invaders.png",
         "link": "https://github.com/EricKenji/space-invaders"
+    },
+    {
+        "title": "Recipe Web App",
+        "description": "A recipe web app that generates a random recipe from a specific category.  Built with Javascript, Node.js and Express",
+        "image": "recipe_app_.png",
+        "link": "https://github.com/EricKenji/recipe-web-app"
     }
 ]
