@@ -70,7 +70,7 @@ projects = [
     },
     {
         "title": "Recipe Web App",
-        "description": "A recipe web app that generates a random recipe from a specific category.  Built with Javascript, Node.js and Express",
+        "description": "A recipe web app that generates a random recipe from a specific category of food.  Built with Javascript, Node.js and Express",
         "image": "recipe_app_.png",
         "link": "https://github.com/EricKenji/recipe-web-app"
     }
